@@ -11,7 +11,16 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+
+        String duplicateFree = "";
+
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if ((duplicateFree.indexOf(s.charAt(i)) == -1) || (s.charAt(i) == ' ')) duplicateFree += s.charAt(i);
+        }
+        return duplicateFree; 
+
+       
     }
 }
